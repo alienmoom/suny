@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FaunaFlora | Explore the Animal World</title>
+    <title>CodeFlow | Visual Development Platform</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -16,8 +16,8 @@
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            color: #2b2d42;
-            background-color: #f7f9f7;
+            color: #333;
+            background-color: #f9fbfd;
         }
         
         h1, h2, h3, h4 {
@@ -55,7 +55,7 @@
         }
         
         .logo-icon {
-            color: #2d6a4f;
+            color: #4361ee;
             font-size: 28px;
             margin-right: 10px;
         }
@@ -64,11 +64,11 @@
             font-family: 'Poppins', sans-serif;
             font-size: 24px;
             font-weight: 700;
-            color: #1b4332;
+            color: #333;
         }
         
         .logo-text span {
-            color: #d97706;
+            color: #4361ee;
         }
         
         .nav-links {
@@ -82,17 +82,17 @@
         
         .nav-links a {
             text-decoration: none;
-            color: #40916c;
+            color: #555;
             font-weight: 500;
             transition: color 0.3s;
         }
         
         .nav-links a:hover {
-            color: #d97706;
+            color: #4361ee;
         }
         
         .cta-button {
-            background-color: #2d6a4f;
+            background-color: #4361ee;
             color: white;
             border: none;
             padding: 12px 28px;
@@ -103,7 +103,7 @@
         }
         
         .cta-button:hover {
-            background-color: #1b4332;
+            background-color: #3a56d4;
             transform: translateY(-2px);
         }
         
@@ -112,14 +112,14 @@
             background: none;
             border: none;
             font-size: 24px;
-            color: #1b4332;
+            color: #333;
             cursor: pointer;
         }
         
         /* Hero Section */
         .hero {
             padding: 150px 0 100px;
-            background: linear-gradient(135deg, #e8f5e9 0%, #f7f9f7 100%);
+            background: linear-gradient(135deg, #f0f4ff 0%, #f9fbfd 100%);
         }
         
         .hero-content {
@@ -136,16 +136,16 @@
         .hero-text h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            color: #1b4332;
+            color: #222;
         }
         
         .hero-text h1 span {
-            color: #d97706;
+            color: #4361ee;
         }
         
         .hero-text p {
             font-size: 18px;
-            color: #555;
+            color: #666;
             margin-bottom: 30px;
             max-width: 600px;
         }
@@ -157,8 +157,8 @@
         
         .secondary-button {
             background-color: white;
-            color: #2d6a4f;
-            border: 2px solid #2d6a4f;
+            color: #4361ee;
+            border: 2px solid #4361ee;
             padding: 12px 28px;
             border-radius: 6px;
             font-weight: 600;
@@ -167,7 +167,7 @@
         }
         
         .secondary-button:hover {
-            background-color: #e8f5e9;
+            background-color: #f0f4ff;
         }
         
         .hero-image {
@@ -178,10 +178,10 @@
         .hero-image img {
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 20px 40px rgba(45, 106, 79, 0.15);
+            box-shadow: 0 20px 40px rgba(67, 97, 238, 0.15);
         }
         
-        /* Habitats Section */
+        /* Features Section */
         .section-title {
             text-align: center;
             margin-bottom: 60px;
@@ -189,28 +189,28 @@
         
         .section-title h2 {
             font-size: 36px;
-            color: #1b4332;
+            color: #222;
             margin-bottom: 15px;
         }
         
         .section-title p {
-            color: #555;
+            color: #666;
             max-width: 700px;
             margin: 0 auto;
         }
         
-        .habitats {
+        .features {
             padding: 100px 0;
             background-color: white;
         }
         
-        .habitats-grid {
+        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
         }
         
-        .habitat-card {
+        .feature-card {
             background: #fff;
             padding: 30px;
             border-radius: 10px;
@@ -218,14 +218,14 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
         
-        .habitat-card:hover {
+        .feature-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        .habitat-icon {
-            background-color: #e8f5e9;
-            color: #2d6a4f;
+        .feature-icon {
+            background-color: #eef2ff;
+            color: #4361ee;
             width: 70px;
             height: 70px;
             border-radius: 50%;
@@ -236,63 +236,61 @@
             font-size: 28px;
         }
         
-        .habitat-card h3 {
+        .feature-card h3 {
             font-size: 22px;
             margin-bottom: 15px;
-            color: #1b4332;
         }
         
-        .habitat-card p {
-            color: #555;
+        .feature-card p {
+            color: #666;
         }
         
-        /* Adaptations Section */
-        .adaptations {
+        /* Benefits Section */
+        .benefits {
             padding: 100px 0;
-            background-color: #e8f5e9;
+            background-color: #f0f4ff;
         }
         
-        .adaptations-grid {
+        .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
         
-        .adaptation-item {
+        .benefit-item {
             text-align: center;
             padding: 30px 20px;
         }
         
-        .adaptation-icon {
-            color: #d97706;
+        .benefit-icon {
+            color: #4361ee;
             font-size: 40px;
             margin-bottom: 20px;
         }
         
-        .adaptation-item h3 {
+        .benefit-item h3 {
             font-size: 22px;
             margin-bottom: 15px;
-            color: #1b4332;
         }
         
-        .adaptation-item p {
-            color: #555;
+        .benefit-item p {
+            color: #666;
         }
         
-        /* Voices of Conservation */
-        .voices {
+        /* Testimonials */
+        .testimonials {
             padding: 100px 0;
             background-color: white;
         }
         
-        .voice-slider {
+        .testimonial-slider {
             max-width: 800px;
             margin: 0 auto;
             position: relative;
         }
         
         .testimonial {
-            background: #f7f9f7;
+            background: #f9fbfd;
             padding: 40px;
             border-radius: 10px;
             text-align: center;
@@ -303,7 +301,7 @@
             font-size: 18px;
             font-style: italic;
             margin-bottom: 30px;
-            color: #444;
+            color: #555;
         }
         
         .testimonial-author {
@@ -316,40 +314,39 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: #d8f3dc;
+            background-color: #ddd;
             margin-right: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            color: #2d6a4f;
+            color: #4361ee;
             font-size: 24px;
         }
         
         .author-info h4 {
             font-size: 18px;
             margin-bottom: 5px;
-            color: #1b4332;
         }
         
         .author-info p {
-            color: #666;
+            color: #777;
             font-size: 14px;
         }
         
-        /* Membership/Support Section */
-        .membership {
+        /* Pricing Section */
+        .pricing {
             padding: 100px 0;
-            background-color: #f7f9f7;
+            background-color: #f9fbfd;
         }
         
-        .membership-grid {
+        .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
         
-        .membership-card {
+        .pricing-card {
             background: white;
             border-radius: 10px;
             padding: 40px 30px;
@@ -358,8 +355,8 @@
             transition: transform 0.3s;
         }
         
-        .membership-card.featured {
-            border-top: 5px solid #2d6a4f;
+        .pricing-card.featured {
+            border-top: 5px solid #4361ee;
             transform: scale(1.05);
             position: relative;
         }
@@ -369,7 +366,7 @@
             top: -12px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #2d6a4f;
+            background-color: #4361ee;
             color: white;
             padding: 5px 20px;
             border-radius: 20px;
@@ -377,30 +374,30 @@
             font-weight: 600;
         }
         
-        .membership-card:hover {
+        .pricing-card:hover {
             transform: translateY(-10px);
         }
         
-        .membership-card.featured:hover {
+        .pricing-card.featured:hover {
             transform: scale(1.05) translateY(-10px);
         }
         
         .plan-name {
             font-size: 24px;
             margin-bottom: 15px;
-            color: #1b4332;
+            color: #333;
         }
         
         .plan-price {
             font-size: 48px;
             font-weight: 700;
-            color: #2d6a4f;
+            color: #4361ee;
             margin-bottom: 20px;
         }
         
         .plan-price span {
             font-size: 16px;
-            color: #666;
+            color: #777;
         }
         
         .plan-features {
@@ -421,7 +418,7 @@
         /* CTA Section */
         .cta-section {
             padding: 100px 0;
-            background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+            background: linear-gradient(135deg, #4361ee 0%, #3a56d4 100%);
             text-align: center;
             color: white;
         }
@@ -429,7 +426,6 @@
         .cta-section h2 {
             font-size: 36px;
             margin-bottom: 20px;
-            color: #fff;
         }
         
         .cta-section p {
@@ -441,19 +437,19 @@
         
         .cta-section .cta-button {
             background-color: white;
-            color: #2d6a4f;
+            color: #4361ee;
             font-size: 16px;
             padding: 15px 40px;
         }
         
         .cta-section .cta-button:hover {
-            background-color: #e8f5e9;
+            background-color: #f0f4ff;
         }
         
         /* Footer */
         footer {
-            background-color: #1b4332;
-            color: #b7e4c7;
+            background-color: #222;
+            color: #ccc;
             padding: 70px 0 20px;
         }
         
@@ -479,21 +475,21 @@
         }
         
         .footer-links a {
-            color: #b7e4c7;
+            color: #aaa;
             text-decoration: none;
             transition: color 0.3s;
         }
         
         .footer-links a:hover {
-            color: #d97706;
+            color: #4361ee;
         }
         
         .copyright {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid #40916c;
+            border-top: 1px solid #444;
             font-size: 14px;
-            color: #95d5b2;
+            color: #888;
         }
         
         /* Responsive Design */
@@ -512,11 +508,11 @@
                 margin: 0 auto 30px;
             }
             
-            .membership-card.featured {
+            .pricing-card.featured {
                 transform: none;
             }
             
-            .membership-card.featured:hover {
+            .pricing-card.featured:hover {
                 transform: translateY(-10px);
             }
         }
@@ -554,11 +550,11 @@
                 padding: 130px 0 80px;
             }
             
-            .habitats, .adaptations, .voices, .membership, .cta-section {
+            .features, .benefits, .testimonials, .pricing, .cta-section {
                 padding: 70px 0;
             }
             
-            .habitat-card, .testimonial {
+            .feature-card, .testimonial {
                 padding: 25px;
             }
             
@@ -574,19 +570,19 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <div class="logo-icon"><i class="fas fa-paw"></i></div>
-                    <div class="logo-text">Fauna<span>Flora</span></div>
+                    <div class="logo-icon"><i class="fas fa-bezier-curve"></i></div>
+                    <div class="logo-text">Code<span>Flow</span></div>
                 </div>
                 
                 <ul class="nav-links">
-                    <li><a href="#habitats">Habitats</a></li>
-                    <li><a href="#adaptations">Adaptations</a></li>
-                    <li><a href="#voices">Voices</a></li>
-                    <li><a href="#membership">Support Us</a></li>
-                    <li><a href="#">Expeditions</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
                 </ul>
                 
-                <button class="cta-button">Join Us</button>
+                <button class="cta-button">Start Free Trial</button>
                 <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </nav>
         </div>
@@ -597,142 +593,142 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Explore the Wonders of the <span>Animal Kingdom</span></h1>
-                    <p>Embark on a visual and educational journey through Earth's most breathtaking wilderness. Learn about diverse species, key conservation efforts, and the delicate ecosystems that sustain life on our planet.</p>
+                    <h1>Build Apps Faster With <span>Visual Development</span></h1>
+                    <p>CodeFlow empowers teams to create enterprise-grade applications with minimal coding. Drag, drop, and connect components to build powerful web and mobile apps in record time.</p>
                     <div class="hero-buttons">
-                        <button class="cta-button">Start Exploring</button>
-                        <button class="secondary-button">Watch Documentary</button>
+                        <button class="cta-button">Start Building Free</button>
+                        <button class="secondary-button">Watch Demo</button>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Majestic Male Lion in Savanna">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CodeFlow Platform Interface">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Habitats Section -->
-    <section class="habitats" id="habitats">
+    <!-- Features Section -->
+    <section class="features" id="features">
         <div class="container">
             <div class="section-title">
-                <h2>Earth's Breathtaking Habitats</h2>
-                <p>Discover the spectacular landscapes that diverse animal species call home, and observe how they evolve to thrive in their environments.</p>
+                <h2>Powerful Features for Rapid Development</h2>
+                <p>CodeFlow provides all the tools you need to build, deploy, and scale applications without writing extensive code.</p>
             </div>
             
-            <div class="habitats-grid">
-                <div class="habitat-card">
-                    <div class="habitat-icon">
-                        <i class="fas fa-tree"></i>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-th-large"></i>
                     </div>
-                    <h3>Tropical Rainforests</h3>
-                    <p>Covering only 6% of Earth's land, these dense, vibrant jungles house more than half of the world's terrestrial species.</p>
+                    <h3>Visual Builder</h3>
+                    <p>Drag and drop UI components to design responsive interfaces. Connect data sources with simple point-and-click actions.</p>
                 </div>
                 
-                <div class="habitat-card">
-                    <div class="habitat-icon">
-                        <i class="fas fa-water"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
                     </div>
-                    <h3>The Deep Oceans</h3>
-                    <p>From shallow coral reefs to abyssal zones, the oceans shelter unique marine life forms, giants, and bioluminescent species.</p>
+                    <h3>Database Integration</h3>
+                    <p>Connect to any data source with built-in connectors. Automatically generate CRUD operations without writing SQL.</p>
                 </div>
                 
-                <div class="habitat-card">
-                    <div class="habitat-icon">
-                        <i class="fas fa-sun"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Arid Deserts</h3>
-                    <p>A testament to survival, desert creatures have developed highly specialized behaviors to endure extreme temperatures and water scarcity.</p>
+                    <h3>Cross-Platform</h3>
+                    <p>Build once, deploy everywhere. Generate applications for web, iOS, and Android from a single visual design.</p>
                 </div>
                 
-                <div class="habitat-card">
-                    <div class="habitat-icon">
-                        <i class="fas fa-snowflake"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3>Polar Regions</h3>
-                    <p>The icy expanses of the Arctic and Antarctic support remarkable predators, insulated marine mammals, and seasonal migrations.</p>
+                    <h3>Extensible with Code</h3>
+                    <p>Add custom functionality with JavaScript when needed. Our platform doesn't limit your creativity or complexity.</p>
                 </div>
                 
-                <div class="habitat-card">
-                    <div class="habitat-icon">
-                        <i class="fas fa-leaf"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>African Savannas</h3>
-                    <p>Characterized by vast grasslands and scattered trees, the savanna plays host to some of the largest land mammal migrations on Earth.</p>
+                    <h3>Enterprise Security</h3>
+                    <p>Built-in authentication, authorization, and data encryption. SOC2 compliant with enterprise-grade security features.</p>
                 </div>
                 
-                <div class="habitat-card">
-                    <div class="habitat-icon">
-                        <i class="fas fa-feather"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>Mountainous Heights</h3>
-                    <p>Alpine heights demand rugged adaptations from species dealing with thin oxygen layers, steep cliffs, and sudden weather shifts.</p>
+                    <h3>One-Click Deployment</h3>
+                    <p>Deploy to cloud or on-premises with a single click. Automatic scaling and monitoring included.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Adaptations Section -->
-    <section class="adaptations" id="adaptations">
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
         <div class="container">
             <div class="section-title">
-                <h2>Fascinating Evolutionary Adaptations</h2>
-                <p>Millions of years of evolution have equipped wildlife with ingenious mechanics to survive, communicate, and hunt.</p>
+                <h2>Why Choose CodeFlow?</h2>
+                <p>Join thousands of companies accelerating their digital transformation with low-code development.</p>
             </div>
             
-            <div class="adaptations-grid">
-                <div class="adaptation-item">
-                    <div class="adaptation-icon">
-                        <i class="fas fa-eye-slash"></i>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Camouflage</h3>
-                    <p>Blending seamlessly into background environments to evade predators or patiently stalk unsuspecting prey.</p>
+                    <h3>10x Faster Development</h3>
+                    <p>Build applications in days instead of months with visual development tools.</p>
                 </div>
                 
-                <div class="adaptation-item">
-                    <div class="adaptation-icon">
-                        <i class="fas fa-wave-square"></i>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
-                    <h3>Echolocation</h3>
-                    <p>Emitting high-frequency sound waves to navigate pitch-black caves or deep oceans with spatial precision.</p>
+                    <h3>Reduce Costs by 70%</h3>
+                    <p>Lower development and maintenance costs with fewer resources required.</p>
                 </div>
                 
-                <div class="adaptation-item">
-                    <div class="adaptation-icon">
-                        <i class="fas fa-hands-helping"></i>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3>Symbiosis</h3>
-                    <p>Establishing cooperative, mutually beneficial relationships between completely different species in an ecosystem.</p>
+                    <h3>Citizen Developers</h3>
+                    <p>Enable business users to build solutions with minimal IT assistance.</p>
                 </div>
                 
-                <div class="adaptation-item">
-                    <div class="adaptation-icon">
-                        <i class="fas fa-route"></i>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Great Migrations</h3>
-                    <p>Journeying thousands of miles across challenging terrains each season in pursuit of food, warmth, and breeding grounds.</p>
+                    <h3>Scale Effortlessly</h3>
+                    <p>From prototype to enterprise-scale applications with the same platform.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Voices of Conservation -->
-    <section class="voices" id="voices">
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Voices of Wildlife Advocates</h2>
-                <p>Hear from biologists, photographers, and field rangers who dedicate their lives to protecting global biodiversity.</p>
+                <h2>Trusted by Industry Leaders</h2>
+                <p>See what our customers have to say about their experience with CodeFlow.</p>
             </div>
             
-            <div class="voice-slider">
+            <div class="testimonial-slider">
                 <div class="testimonial">
                     <div class="testimonial-text">
-                        "Protecting wildlife is not merely an ethical duty; it is essential to keeping Earth's complex ecological systems balanced. When we lose a species, we lose a thread in the fabric of life."
+                        "CodeFlow transformed how we deliver solutions to our business units. What used to take 6 months now takes 3 weeks. Our development team can focus on complex problems while business teams build their own solutions."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">JR</div>
+                        <div class="author-avatar">SC</div>
                         <div class="author-info">
-                            <h4>Dr. Jonathan Reed</h4>
-                            <p>Wildlife Ecologist, EarthTrust</p>
+                            <h4>Sarah Chen</h4>
+                            <p>CTO, TechGrowth Inc.</p>
                         </div>
                     </div>
                 </div>
@@ -740,55 +736,55 @@
         </div>
     </section>
 
-    <!-- Membership/Support Section -->
-    <section class="membership" id="membership">
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-title">
-                <h2>Support Conservation Efforts</h2>
-                <p>Choose an alliance tier to directly fund habitat preservation, anti-poaching patrols, and scientific research.</p>
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your needs. All plans include core features with no hidden fees.</p>
             </div>
             
-            <div class="membership-grid">
-                <div class="membership-card">
-                    <h3 class="plan-name">Explorer</h3>
-                    <div class="plan-price">$15<span>/month</span></div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Starter</h3>
+                    <div class="plan-price">$29<span>/month</span></div>
                     <ul class="plan-features">
-                        <li>Monthly digital wildlife digest</li>
-                        <li>High-res wildlife desktop wallpapers</li>
-                        <li>Detailed species fact sheets</li>
-                        <li>Virtual adoption certificate</li>
-                        <li>Project voting rights</li>
+                        <li>Up to 5 users</li>
+                        <li>10 GB storage</li>
+                        <li>Basic components</li>
+                        <li>Community support</li>
+                        <li>1 production app</li>
                     </ul>
-                    <button class="secondary-button">Select Explorer</button>
+                    <button class="secondary-button">Get Started</button>
                 </div>
                 
-                <div class="membership-card featured">
-                    <div class="featured-badge">Highly Impactful</div>
-                    <h3 class="plan-name">Guardian</h3>
-                    <div class="plan-price">$45<span>/month</span></div>
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3 class="plan-name">Professional</h3>
+                    <div class="plan-price">$89<span>/month</span></div>
                     <ul class="plan-features">
-                        <li>Everything in Explorer plan</li>
-                        <li>Access to live field webcams</li>
-                        <li>Annual printed wildlife guidebook</li>
-                        <li>Quarterly Q&A with field researchers</li>
-                        <li>Sponsor 1 acre of habitat restoration</li>
-                        <li>Eco-friendly welcome package</li>
+                        <li>Up to 25 users</li>
+                        <li>100 GB storage</li>
+                        <li>All components</li>
+                        <li>Priority support</li>
+                        <li>10 production apps</li>
+                        <li>Custom branding</li>
                     </ul>
-                    <button class="cta-button">Become a Guardian</button>
+                    <button class="cta-button">Try Free for 14 Days</button>
                 </div>
                 
-                <div class="membership-card">
-                    <h3 class="plan-name">Champion</h3>
-                    <div class="plan-price">$120<span>/month</span></div>
+                <div class="pricing-card">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <div class="plan-price">Custom</div>
                     <ul class="plan-features">
-                        <li>Everything in Guardian plan</li>
-                        <li>Direct impact progress reports</li>
-                        <li>Fund a field research tracking collar</li>
-                        <li>Priority invitations to virtual summits</li>
-                        <li>Sponsor 5 acres of safe habitat</li>
-                        <li>Dedicated field liaison contact</li>
+                        <li>Unlimited users</li>
+                        <li>Unlimited storage</li>
+                        <li>All features included</li>
+                        <li>24/7 dedicated support</li>
+                        <li>Unlimited apps</li>
+                        <li>On-premises option</li>
                     </ul>
-                    <button class="secondary-button">Select Champion</button>
+                    <button class="secondary-button">Contact Sales</button>
                 </div>
             </div>
         </div>
@@ -797,9 +793,9 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Stand Up for the Wild</h2>
-            <p>Every individual effort makes a difference. Join our global network of advocates working daily to safeguard endangered habitats and vulnerable species from extinction.</p>
-            <button class="cta-button">Join the Conservation Alliance</button>
+            <h2>Start Building Today</h2>
+            <p>Join over 10,000 companies that use CodeFlow to accelerate their application development. No credit card required for the free trial.</p>
+            <button class="cta-button">Get Started for Free</button>
         </div>
     </section>
 
@@ -809,48 +805,48 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <div class="logo">
-                        <div class="logo-icon"><i class="fas fa-paw"></i></div>
-                        <div class="logo-text">Fauna<span>Flora</span></div>
+                        <div class="logo-icon"><i class="fas fa-bezier-curve"></i></div>
+                        <div class="logo-text">Code<span>Flow</span></div>
                     </div>
-                    <p style="margin-top: 20px; color: #b7e4c7;">A global organization dedicated to documenting, understanding, and preserving the marvelous animal kingdom.</p>
+                    <p style="margin-top: 20px; color: #aaa;">The leading visual development platform for building enterprise applications with minimal coding.</p>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Explore</h3>
+                    <h3>Product</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Species Directory</a></li>
-                        <li><a href="#">Virtual Tours</a></li>
-                        <li><a href="#">Current Projects</a></li>
-                        <li><a href="#">Scientific Journals</a></li>
-                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Use Cases</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Roadmap</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Get Involved</h3>
+                    <h3>Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Volunteer Programs</a></li>
-                        <li><a href="#">Partner With Us</a></li>
-                        <li><a href="#">Eco-Travel</a></li>
-                        <li><a href="#">Campaigns</a></li>
-                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>About Us</h3>
+                    <h3>Company</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Our Vision</a></li>
-                        <li><a href="#">Team of Experts</a></li>
-                        <li><a href="#">Annual Reports</a></li>
-                        <li><a href="#">Media Kit</a></li>
-                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2026 FaunaFlora Organization. All rights reserved.</p>
+                <p>&copy; 2023 CodeFlow. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -904,25 +900,25 @@
             });
         });
         
-        // Testimonials / Voices slider data
+        // Simple testimonial slider
         const testimonials = [
             {
-                text: "Protecting wildlife is not merely an ethical duty; it is essential to keeping Earth's complex ecological systems balanced. When we lose a species, we lose a thread in the fabric of life.",
-                name: "Dr. Jonathan Reed",
-                position: "Wildlife Ecologist, EarthTrust",
-                initials: "JR"
+                text: "CodeFlow transformed how we deliver solutions to our business units. What used to take 6 months now takes 3 weeks. Our development team can focus on complex problems while business teams build their own solutions.",
+                name: "Sarah Chen",
+                position: "CTO, TechGrowth Inc.",
+                initials: "SC"
             },
             {
-                text: "Capturing the raw beauty of these creatures in their undisturbed habitats reminds us of what we stand to lose if we do not act immediately to protect their migratory paths.",
-                name: "Elena Rostova",
-                position: "Conservation Photographer",
-                initials: "ER"
+                text: "We reduced our app development time by 80% using CodeFlow. The visual interface made it easy for our analysts to build data dashboards without waiting for IT resources.",
+                name: "Marcus Johnson",
+                position: "Director of Operations, DataCorp",
+                initials: "MJ"
             },
             {
-                text: "Through community-led conservation programs, we have shown that human livelihoods and rich biodiversity can successfully flourish alongside one another.",
-                name: "David Kiptoo",
-                position: "Field Ranger, Maasai Mara Initiative",
-                initials: "DK"
+                text: "As a non-technical founder, CodeFlow allowed me to build our MVP in just 2 months. I could test ideas quickly and iterate based on user feedback without deep coding knowledge.",
+                name: "Lisa Wang",
+                position: "Founder, StartupLabs",
+                initials: "LW"
             }
         ];
         
@@ -954,15 +950,15 @@
         // CTA button interactions
         document.querySelectorAll('.cta-button').forEach(button => {
             button.addEventListener('click', function() {
-                alert('Thank you for your interest in FaunaFlora! In a live website, this would direct you to our registration and signup portal.');
+                alert('Thank you for your interest in CodeFlow! You would be redirected to the signup page in a real implementation.');
             });
         });
         
-        // Membership selection interactions
-        document.querySelectorAll('.membership-card button').forEach(button => {
+        // Pricing card interactions
+        document.querySelectorAll('.pricing-card button').forEach(button => {
             button.addEventListener('click', function() {
-                const planName = this.closest('.membership-card').querySelector('.plan-name').textContent;
-                alert(`You selected the ${planName} level. In a live implementation, you would be redirected to a secure payment processing portal.`);
+                const planName = this.closest('.pricing-card').querySelector('.plan-name').textContent;
+                alert(`You selected the ${planName} plan. In a real implementation, you would be redirected to the checkout process.`);
             });
         });
     </script>
